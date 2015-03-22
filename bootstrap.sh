@@ -14,3 +14,13 @@ apt-get upgrade -y
 
 # Install packages
 apt-get install -y software-properties-common curl wget hhvm git-core vim nginx
+
+# Set up needed directories
+mkdir -p /srv/www/logs
+
+# Handle config files
+cp /vagrant/server/nginx/report-only.conf /etc/nginx/conf.d/report-only.conf
+
+# Restart services in case of a config change
+service nginx restart
+service hhvm restart
