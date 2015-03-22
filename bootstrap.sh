@@ -10,7 +10,7 @@ add-apt-repository 'deb http://nginx.org/packages/mainline/ubuntu/ trusty nginx'
 
 # Get the latest updates
 apt-get update
-apt-get upgrade
+apt-get upgrade -y
 
 # Install packages
 apt-get install -y software-properties-common curl wget hhvm git-core vim nginx
