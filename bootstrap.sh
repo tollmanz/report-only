@@ -5,7 +5,7 @@ apt-key adv --recv-keys --keyserver hkp://keyserver.ubuntu.com:80 0x5a16e7281be7
 add-apt-repository 'deb http://dl.hhvm.com/ubuntu trusty main'
 
 # Nginx source
-apt-key add /vagrant/server/nginx_signing.key
+apt-key add /vagrant/server/nginx/nginx_signing.key
 add-apt-repository 'deb http://nginx.org/packages/mainline/ubuntu/ trusty nginx'
 
 # Get the latest updates
